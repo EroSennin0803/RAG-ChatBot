@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-google-genai
+langgraph
+chromadb
+pypdf
+fastapi
+uvicorn
+streamlit
+python-dotenv
+pydantic
