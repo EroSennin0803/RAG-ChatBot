@@ -54,3 +54,11 @@ A Retrieval-Augmented Generation (RAG) based AI Chatbot built in Python. This ch
 1. **Ingestion**: `PyPDFLoader` extracts text -> `RecursiveCharacterTextSplitter` chunks it -> Gemini embeds it -> Stored in Chroma DB.
 2. **Retrieval**: User asks a question -> Converted to vector -> Chroma DB returns top 4 closest chunks using L2/Cosine similarity.
 3. **Generation**: LangGraph routes the context chunks to the Gemini LLM with strict instructions to generate the final answer.
+
+## 💡 Sample Queries to Try
+To test the chatbot's grounding and retrieval capabilities, try asking these questions:
+- *"Who are the members of the authoring team?"*
+- *"What are the practical applications of Agentic AI?"*
+- *"How does Agentic AI differ from traditional AI models?"*
+- *"Can you explain the workflow automation examples mentioned in the book?"*
+- *"What is the recipe for chocolate chip cookies?"* (To test the strict guardrails—the bot should refuse to answer since it's not in the PDF!)
